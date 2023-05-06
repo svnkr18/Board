@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  width: 221px;
+  height: 120px;
+
+  border-radius: 20px;
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 169px;
+}
+.p1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  position: absolute;
+  top: 45px;
+  left: 25px;
+}
+.p2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+}

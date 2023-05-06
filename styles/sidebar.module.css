@@ -1,0 +1,35 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+.option {
+  display: flex;
+  gap: 20px;
+}
+.help {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 60px;
+  gap: 20px;
+}
+.p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+.p1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
