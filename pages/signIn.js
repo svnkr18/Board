@@ -2,8 +2,13 @@ import Head from "next/head";
 import React from "react";
 import styles from "@/styles/signIn.module.css";
 import Image from "next/image";
+import { auth, provider } from "../firebase";
+import { signInWithPopup } from "firebase/auth";
 
-const signIn = () => {
+const SignIn = () => {
+  const logIn = () => {
+    signInWithPopup(auth, provider).catch(alert);
+  };
   return (
     <div>
       <Head>
@@ -20,7 +25,11 @@ const signIn = () => {
               <p className={styles.signDes}> Sign in to your account</p>
             </div>
             <div style={{ display: "flex", marginTop: "26px", gap: "25px" }}>
-              <div className={styles.button}>
+              <button
+                onClick={logIn}
+                className={styles.button}
+                style={{ border: "1px solid #a4b9e470" }}
+              >
                 <Image
                   src="/google-icon 1.svg"
                   alt="google logo"
@@ -28,7 +37,7 @@ const signIn = () => {
                   width={14}
                 />
                 <p style={{ marginLeft: "10px" }}>Sign in with Google</p>
-              </div>
+              </button>
               <div className={styles.button}>
                 <Image
                   src="/apple 1.svg"
@@ -69,4 +78,4 @@ const signIn = () => {
   );
 };
 
-export default signIn;
+export default SignIn;

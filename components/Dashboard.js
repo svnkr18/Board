@@ -8,7 +8,11 @@ import LineCharts from "./LineCharts";
 import PieTile from "./PieTile";
 import CalenderTile from "./CalenderTile";
 
+import { auth } from "../firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
+
 const Dashboard = () => {
+  const [user] = useAuthState(auth);
   return (
     // <div className={styles.main}>
     //   <div className={styles.sidebar}>
@@ -63,6 +67,7 @@ const Dashboard = () => {
                 height={51}
                 width={52}
                 className={styles.profile}
+                onClick={() => auth.signOut()}
               />
             </div>
           </div>
