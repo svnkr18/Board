@@ -18,7 +18,8 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 
 
-https://user-images.githubusercontent.com/106731861/236759482-006ad677-f583-44a2-93d1-78f7a16d1c48.mp4
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/106731861/236760563-6e130b43-ad13-47ca-a454-debddce40d2f.gif)
 
 
 
